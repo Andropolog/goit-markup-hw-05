@@ -49,7 +49,7 @@
         <section class="section hero">
             <div class="container">
                 <h1 class="hero-title">Эффективные решения <br /> для вашего бизнеса</h1>
-                <button class="hero-button" type="button">Заказать услугу</button>
+                <button class="hero-button" type="button" data-modal-open>Заказать услугу</button>
             </div>          
         </section>
         <!----- ADVANTAGES ----->
@@ -96,9 +96,18 @@
                 <section>
                     <h2 class="section-title">Чем мы занимаемся</h2>
                     <ul class="activities list">
-                        <li><img src="images/boxa.jpg" alt="Програмист работает в офисе" width="370"></li>
-                        <li><img src="images/boxb.jpg" alt="Дизайнер создает интерфейс мобильного приложения" width="370"></li>
-                        <li><img src="images/boxc.jpg" alt="Художник выбирает цвет на планшете" width="370"></li>
+                        <li class="act-list">
+                            <img src="images/boxa.jpg" alt="Програмист работает в офисе" width="370">
+                            <p class="act-labels">Десктопные приложения</p>
+                        </li>
+                        <li class="act-list">
+                            <img src="images/boxb.jpg" alt="Дизайнер создает интерфейс мобильного приложения" width="370">
+                            <p class="act-labels">Мобильные приложения</p>
+                        </li>
+                        <li class="act-list">
+                            <img src="images/boxc.jpg" alt="Художник выбирает цвет на планшете" width="370">
+                            <p class="act-labels">Дизайнерские решения</p>
+                        </li>
                     </ul>
                 </section>
            </div>
@@ -375,5 +384,16 @@
             </div>
         </div>       
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="modal-close-btn" data-modal-close>
+                <svg width="18" height="18">
+                    <use href="./images/sprite.svg#icon-close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
+
